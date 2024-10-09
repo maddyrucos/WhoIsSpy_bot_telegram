@@ -1,3 +1,11 @@
+import sqlalchemy
+import config
+
+
+engine = sqlalchemy.create_engine(f'{config.DATABASE}://{config.USER}:{config.PASSWORD}@{config.DBIP}/{config.DBNAME}')
+engine.connect()
+
+
 def get_players(chat_id: int) -> dict:
     ''' Return players dict with parameters: id, fullname and role(1 if spy else 0)  '''
     return {}
