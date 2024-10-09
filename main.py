@@ -1,5 +1,5 @@
 from aiogram import Bot, Dispatcher, F, Router, types
-from aiogram.filters.commands import Command
+from aiogram.filters.command import Command
 from aiogram.filters import CommandStart
 
 import database as db

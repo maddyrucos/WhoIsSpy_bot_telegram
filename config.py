@@ -9,9 +9,9 @@ load_dotenv()
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 BOT_LINK = 'WhoIsSpyGameBot' # Replace link with your bot's link
 
-DATABASE = 'postgresql' # You can change it according to sqlalchemy rules
+DATABASE = 'postgresql+psycopg' # You can change it according to sqlalchemy rules
 
-if DATABASE=='postgresql':
+if DATABASE=='postgresql+psycopg':
     """ Change parameters according your PostgreSQL setup """
     USER = 'postgres'
     PASSWORD = os.getenv('POSTGRES_PASSWORD')
