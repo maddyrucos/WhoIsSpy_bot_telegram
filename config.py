@@ -13,10 +13,10 @@ DATABASE = 'postgresql+psycopg' # You can change it according to sqlalchemy rule
 
 if DATABASE=='postgresql+psycopg':
     """ Change parameters according your PostgreSQL setup """
-    USER = 'postgres'
+    USER = 'spy'
     PASSWORD = os.getenv('POSTGRES_PASSWORD')
     DBIP = 'localhost'
-    DBNAME = 'postgres'
+    DBNAME = 'spy'
 
 logging.basicConfig(
     filename='logs.txt',

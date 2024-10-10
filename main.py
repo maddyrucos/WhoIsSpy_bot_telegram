@@ -1,8 +1,8 @@
-from aiogram import Bot, Dispatcher, F, Router, types
+from aiogram import Bot, Dispatcher, Router, types
 from aiogram.filters.command import Command
 from aiogram.filters import CommandStart
 
-import database as db
+from Database import database as db
 import markups as mks
 import asyncio
 import logging
