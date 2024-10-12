@@ -2,7 +2,7 @@ from distutils.command.config import config
 
 import sqlalchemy as sq
 from sqlalchemy import orm
-from models import Base, User, Game
+from .models import Base, User, Game
 import config
 
 engine = sq.create_engine(f'postgresql+psycopg://{config.USER}:{config.PASSWORD}@localhost/{config.DBNAME}')

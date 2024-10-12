@@ -2,7 +2,7 @@ from aiogram import F, Router, types
 
 voting = Router()
 
-@voting.callback_quiery(F.data.startswith('vote'))
+@voting.callback_query(F.data.startswith('vote'))
 async def vote_handler(callback_query: types.CallbackQuery) -> None:
     ''' Takes votes, where voted_id is id of the player someone voted for '''
     chat_id, voted_id = str(callback_query.data).split()[1:]

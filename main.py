@@ -80,7 +80,7 @@ async def command_play_handler(message: types.Message) -> None:
     await bot.send_message(message.chat.id, 'Время вышло! Голосование за шпиона ', reply_markup=mks.voting)
 
 async def run_bot():
-    bot.run()
+    await dp.run_polling(bot)
 
 
 if __name__ == "__main__":

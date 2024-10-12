@@ -3,8 +3,8 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 import config
 
-ask_group = InlineKeyboardButton('Пригласить в группу', url=f'https://t.me/{config.BOT_LINK}?startgroup=true')
-start = InlineKeyboardMarkup(inline_keyboar=[[ask_group]])
+ask_group = InlineKeyboardButton(text='Пригласить в группу', url=f'https://t.me/{config.BOT_LINK}?startgroup=true')
+start = InlineKeyboardMarkup(inline_keyboard=[[ask_group]])
 
 def create_voting(chat_id: int, players: list):
     ''' Players vote by buttons. Button has callback with chat id and player id '''
